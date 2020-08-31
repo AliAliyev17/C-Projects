@@ -12,31 +12,6 @@ void printList(int list[], int size) {
 	}
 	printf("\n");
 }
-/*
-bool checkPrime(int list[], int index) {
-	 int digit = list[index];
-	 for(int i=0; i<index; i++) {
-	 	if(digit%list[i]==0) {
-	 		printf("%d %d %d", digit, list[i], digit%list[i]);
-	 	}
-	 }
-	 return true;
-} 
-
-void main() {
-	// Create list of 100 numbers
-	int list[100];
-	for(int i=0; i<100; i++) {
-		list[i] = i+1;
-	}
-
-	// Print the list
-	// printList(list, 100);
-
-	checkPrime(list, 10);
-}
-
-*/
 
 void main() {
 	const int limit=187;
@@ -46,7 +21,6 @@ void main() {
 	for(int n=3; n<limit; n++) {
 		for(int ind=0; ind<187; ind++) {
 			if(primes[ind]!=0 && n%primes[ind]==0){
-				// printf("%d is divisible by %d\n", n, primes[ind]);
 				append=false;
 			}
 		}
@@ -58,5 +32,4 @@ void main() {
 	}
 	printf("\n");
 	printList(primes, limit);
-}	
-
+}
